@@ -11,6 +11,9 @@ public class FirstprojectApplication {
 		
 		ApplicationContext ac =  SpringApplication.run(FirstprojectApplication.class, args);
 		BinarySortImp b = ac.getBean(BinarySortImp.class);
+		BinarySortImp b1 = ac.getBean(BinarySortImp.class);
+		System.out.println(b);
+		System.out.println(b1);
 		b.sortAlgorithmMethod(new int[] {12,13,1,4,15}, 5);
 	}
 
