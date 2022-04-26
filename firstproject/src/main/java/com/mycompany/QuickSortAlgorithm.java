@@ -1,5 +1,8 @@
 package com.mycompany;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class QuickSortAlgorithm implements SortAlgotrithm{
 
 	@Override
