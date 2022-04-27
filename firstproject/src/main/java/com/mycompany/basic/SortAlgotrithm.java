@@ -1,4 +1,4 @@
-package com.mycompany;
+package com.mycompany.basic;
 
 public interface SortAlgotrithm {
 	
