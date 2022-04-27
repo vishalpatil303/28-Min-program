@@ -1,7 +1,13 @@
-package com.mycompany;
+package com.mycompany.basic;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("Quick")
 public class QuickSortAlgorithm implements SortAlgotrithm{
 
+	
 	@Override
 	public int[] sort(int[] numbers) {
 		System.out.println("Quick Sort Algorithm");
