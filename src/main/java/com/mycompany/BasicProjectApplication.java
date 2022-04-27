@@ -4,12 +4,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import com.mycompany.basic.BinarySortImp;
+
 @SpringBootApplication
-public class FirstprojectApplication {
+public class BasicProjectApplication {
 
 	public static void main(String[] args) {
 		
-		ApplicationContext ac =  SpringApplication.run(FirstprojectApplication.class, args);
+		ApplicationContext ac =  SpringApplication.run(BasicProjectApplication.class, args);
 		BinarySortImp b = ac.getBean(BinarySortImp.class);
 		BinarySortImp b1 = ac.getBean(BinarySortImp.class);
 		System.out.println(b);
