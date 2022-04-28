@@ -18,7 +18,7 @@ public class BasicProjectApplication {
 		ApplicationContext ac = SpringApplication.run(BasicProjectApplication.class, args);
 		BinarySortImp b =ac.getBean(BinarySortImp.class);
 		b.sortAlgorithmMethod(new int[] {12,16,18,17}, 5);
-
+		LOGGER.info("{}",b);
 	}
 
 }
