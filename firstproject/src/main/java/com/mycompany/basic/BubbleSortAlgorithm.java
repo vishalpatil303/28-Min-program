@@ -9,9 +9,14 @@ import org.springframework.stereotype.Component;
 @Component
 @Primary
 @Qualifier("Bubble")
+
 public class BubbleSortAlgorithm implements SortAlgotrithm
 {
 
+	public BubbleSortAlgorithm()
+	{
+		System.out.println("Bubble Sort Algorithm");
+	}
 	@Override
 	public int[] sort(int[] numbers) {
 		System.out.println("Bubble Sort Algorithm");

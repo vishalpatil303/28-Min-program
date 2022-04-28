@@ -10,6 +10,10 @@ import org.springframework.stereotype.Component;
 @Qualifier("Quick")
 public class QuickSortAlgorithm implements SortAlgotrithm{
 
+	public QuickSortAlgorithm()
+	{
+		System.out.println("Quick Sort Algorithm");
+	}
 	@Override
 	public int[] sort(int[] numbers) {
 		System.out.println("Quick Sort Algorithm");
